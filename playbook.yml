@@ -19,12 +19,12 @@
         enabled: yes
 
     - name: Pull jenkins image
-      docker_image:
+      community.docker.docker_image:
         name: jenkins/jenkins:lts
         source: pull
 
     - name: pull tomcat image
-      docker_image:
+      community.docker.docker_image:
         name: tomcat:9
         source: pull
 
